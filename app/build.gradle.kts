@@ -54,4 +54,10 @@ dependencies {
     implementation("com.google.android.material:material:1.4.0")
     implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
     implementation("com.google.firebase:firebase-auth-ktx")
+
+    implementation ("com.google.firebase:firebase-database-ktx:20.0.5")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.0")
+
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
 }
