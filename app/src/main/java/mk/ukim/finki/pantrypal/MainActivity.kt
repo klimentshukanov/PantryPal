@@ -15,11 +15,26 @@ import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.auth
+import mk.ukim.finki.pantrypal.ui.AddItem
 import mk.ukim.finki.pantrypal.ui.Login
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+
+    public override fun onStart() {
+        super.onStart()
+
+        auth = Firebase.auth
+
+        val currentUser = auth.currentUser
+        if (currentUser == null) {
+            val intent = Intent(this, Login::class.java)
+            startActivity(intent);
+            finish();
+        }
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,5 +63,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent);
             finish();
         }
+
+        val addItemButton : Button = findViewById(R.id.add_item);
+        addItemButton.setOnClickListener{
+            val intent = Intent(this, AddItem::class.java)
+            startActivity(intent);
+            finish();
+        }
+
     }
 }

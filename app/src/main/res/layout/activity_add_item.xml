@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.AddItem">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/topbar_fragment"
+        android:name="mk.ukim.finki.pantrypal.ui.TopbarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/topbar_fragment" />
+
+    <EditText
+        android:id="@+id/itemNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="@string/item_name"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/expirationDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="16dp"
+        android:hint="@string/expiration_date"
+        android:importantForAutofill="no"
+        android:inputType="datetime"/>
+
+    <TextView
+        android:id="@+id/expirationDateWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="@string/expiration_date_warning" />
+
+    <Button
+        android:id="@+id/addItemButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_item"
+        android:layout_margin="16dp"/>
+
+</LinearLayout>
