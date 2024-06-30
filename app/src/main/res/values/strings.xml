@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PantryPal</string>
+    <string name="pantrypal">PantryPal</string>
+    <string name="add_item">Add Item</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="go_to_login">Go to Login</string>
+    <string name="click_to_register">Don\'t have an account? Click to register</string>
+    <string name="logout">Log out</string>
+    <string name="filler">...</string>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "651759697353",
+    "project_id": "pantrypal-5ed45",
+    "storage_bucket": "pantrypal-5ed45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651759697353:android:9f70dae61b1fd0d09e7c18",
+        "android_client_info": {
+          "package_name": "mk.ukim.finki.pantrypal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrU5vNKZFAXNG-aKVZmefPFbRcpcTDM-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
